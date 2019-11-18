@@ -1,0 +1,9 @@
+
+public class Empleado {
+	int idEmpleado;
+	String nombre, apellidos, sexo;
+	double salario;
+	int edad;
+	
+
+}

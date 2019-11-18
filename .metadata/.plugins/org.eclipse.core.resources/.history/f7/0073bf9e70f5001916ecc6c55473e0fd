@@ -1,0 +1,12 @@
+
+public class Ejercicio17ArraysClase2 {
+	public static void main(String[] args) {
+		String [] dias = {"lunes","martes", "miercoles","jueves","viernes",
+				"sabado","domingo"};
+		
+		int diaSemana = 7;
+		
+		System.out.println("hoy es : " + dias[diaSemana-1]);
+	}
+
+}

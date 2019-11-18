@@ -1,0 +1,13 @@
+
+public class Ejercicio16ExplicacionArrays {
+	public static void main(String[] args) {
+		
+		int [] pares = {2,6,8,10,34,68};
+		String [] nombres = {"andres", "esteban", "zacarias", "eva","ana"};
+		
+		System.out.println(pares.length);
+		System.out.println(nombres.length);
+		
+	}
+
+}

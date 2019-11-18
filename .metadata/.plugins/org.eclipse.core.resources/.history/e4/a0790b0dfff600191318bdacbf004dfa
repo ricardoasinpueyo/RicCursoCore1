@@ -1,0 +1,33 @@
+
+public class TestEmpleado {
+	public static void main(String[] args) {
+		Empleado emp1, emp2, emp3;
+		String nombre = "cucu";
+	 
+		emp1 = new Empleado();
+		emp2 = new Empleado(114, "eva", "perez","M", 45000, 43);
+		emp3 = new Empleado(115,"andrea","sanchez pastor", "M", 78000,24);
+		
+		emp1.setIdEmpleado(114);
+		emp1.setNombre("rafael");
+		emp1.setApellidos("delagado");
+		emp1.setEdad(56);
+		emp1.setSalario(34500);
+		emp1.setSexo("H");
+	
+		System.out.println(nombre);
+		
+		System.out.println(emp1);
+		System.out.println(emp2);
+		System.out.println(emp3);
+		
+		System.out.println(emp1.getSalario());
+		System.out.println(emp2.getNombre());
+		
+		Empleado emp4 = new Empleado(300, "rrrr", "cccc");
+		System.out.println(emp4);
+		
+		
+	}
+
+}

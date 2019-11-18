@@ -1,0 +1,16 @@
+
+public class Empleado {
+	int idEmpleado;
+	private String nombre, apellidos, sexo;
+	private double salario;
+	private int edad;
+	@Override
+	public String toString() {
+		return "Empleado [idEmpleado=" + idEmpleado + ", nombre=" + nombre + ", apellidos=" + apellidos + ", sexo="
+				+ sexo + ", salario=" + salario + ", edad=" + edad + "]";
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,14 @@
+
+public class Ejercicio11Supesto2Chungos {
+	public static void main(String[] args) {
+		int comision =0, salario =0;
+		 
+		 if (comision == 0) {
+			 System.out.println("preguntar por el salario");
+		 }else {
+			 System.out.println("preguntar por la comision");
+		 }
+			 
+	}
+
+}

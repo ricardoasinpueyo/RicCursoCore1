@@ -1,0 +1,17 @@
+
+public class Ejercicio2 {
+
+	public static void main(String[] args) {
+		double num1=5;
+		int num2 = 15;
+		
+		System.out.println("la suma es : " + (num1 + num2));
+//		System.out.println("la suma es : " + resultado);
+		System.out.println("la resta es : " + (num1 - num2));
+		System.out.println("el producto es : " + (num1 * num2));
+		System.out.println("la division es : " + (num1 / num2));
+		System.out.println("el resto de la div es : " + (num1 % num2));
+
+	}
+
+}

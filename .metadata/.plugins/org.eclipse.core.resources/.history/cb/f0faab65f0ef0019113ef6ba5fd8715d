@@ -1,0 +1,10 @@
+
+public class Ejercicio01 {
+	public static void main(String[] args) {
+		String nombre = "sebastian";
+		System.out.println(nombre.toUpperCase());
+		System.out.println(String.valueOf(1234));
+		
+	}
+
+}

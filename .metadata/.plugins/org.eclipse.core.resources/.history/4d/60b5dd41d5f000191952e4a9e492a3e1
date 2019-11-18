@@ -1,0 +1,17 @@
+
+public class Ejercicio05Ifs {
+	public static void main(String[] args) {
+		int num = 4;
+		if (num == 4) {
+			System.out.println("es 4");
+			System.out.println("algo mas de 4");
+			
+		}else {
+			System.out.println("no es cuatro");
+			System.out.println("algo mas deno es 4");
+			
+		}
+		System.out.println("es todo todooo asmigoooooooooo");
+	}
+
+}

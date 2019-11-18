@@ -1,0 +1,43 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import entidad.Coche;
+
+public class MainCoches {
+	Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Coche> listaCoches = new ArrayList<Coche>();
+		int opcion = 0;
+		
+		do {
+			opcion = mostrarMenu();
+			if(opcion == 1) {
+				Coche coche = altaCoche();
+			}else if(opcion == 2) {
+				listarCoches(listaCoches);
+			}
+		} while (opcion != 0);
+		System.out.println("Fin del programa");
+	}
+
+	private static void listarCoches(ArrayList<Coche> listaCoches) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static Coche altaCoche() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static int mostrarMenu() {
+		System.out.println("1- Alta de coche");
+		System.out.println("2- Listar coches");
+		System.out.println("0- Salir del programa");
+		return 0;
+	}
+}

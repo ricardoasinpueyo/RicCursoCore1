@@ -1,0 +1,61 @@
+
+public class Ejercicio11Supesto2Chungos {
+ 	static double comision, salario, aumento, subida;
+	
+	
+	public static void main(String[] args) {
+		salario = 12000;
+		aumento = 0;
+		comision = 0;
+		 
+		 if (comision == 0) {
+			verSalario();
+		 }else {
+			verComision();
+		 }
+		 System.out.print("el salario era : " + salario);
+		 System.out.print("\tla subida es  : " + subida + "%");
+		 System.out.print("\tel aumento es : " + aumento);
+		 System.out.println("\tte queda el salario  : " + (salario+aumento));
+		 
+		 
+			 
+	}
+	
+	private static void verSalario() {
+		if (salario < 15000) {
+			subida = 10;
+			aumento = salario * subida/100;
+		}else { if (salario >=15000 && salario < 30000) {
+			System.out.println("aumento del 8%");
+				}else { if (salario >= 30000 && salario < 45000) {
+							System.out.println("aumento del 4%");
+						}else
+							System.out.println("sin aumento");
+				}
+			
+		}
+		
+	}
+	
+	private static void verComision() {
+		if (comision < 2000) {
+			System.out.println("aumento del 12%");
+		}else { if (comision >=2000 && comision < 10000){
+				System.out.println("aumento del 6%");
+		}else {
+			System.out.println("te jorobas no aumento");
+		}
+		}	
+	 
+	}
+	
+/*
+ *  Cuanto ganaba al principio,
+ 	qué % de subida le corresponde
+ 	cuanto supone el aumento (cero si no es nada)
+ 	En cuanto se le queda el sueldo.
+
+ * */
+  
+}

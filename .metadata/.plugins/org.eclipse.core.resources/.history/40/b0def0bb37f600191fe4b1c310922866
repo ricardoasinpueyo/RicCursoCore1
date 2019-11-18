@@ -1,0 +1,26 @@
+
+public class TestEmpleado {
+	public static void main(String[] args) {
+		Empleado emp1, emp2, emp3;
+		String nombre = "cucu";
+	 
+		emp1 = new Empleado();
+		emp2 = new Empleado();
+		emp3 = new Empleado();
+		
+		emp1.idEmpleado = 100;
+		emp1.nombre = "tomas";
+		emp1.apellidos = "escu delgado";
+		emp1.edad = 58;
+		emp1.salario = 25000;
+		emp1.sexo = "h";
+		
+		System.out.println(nombre);
+		System.out.println(emp1);
+		
+		System.out.println(emp1);
+		
+		
+	}
+
+}

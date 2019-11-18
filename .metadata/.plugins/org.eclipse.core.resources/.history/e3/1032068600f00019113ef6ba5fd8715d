@@ -1,0 +1,16 @@
+
+public class Ejercicio01 {
+	public static void main(String[] args) {
+	/*	String nombre = "sebastian";
+		System.out.println(nombre.toUpperCase());
+		System.out.println(String.valueOf(1234).substring(1,3));
+	*/
+		int num1=0, num2=0;
+		//simulamos que los leemos
+		num1 = 15;
+		num2 = 25;
+		//proceso
+		System.out.println("la suma es : " + (num1 + num2));
+	}
+
+}

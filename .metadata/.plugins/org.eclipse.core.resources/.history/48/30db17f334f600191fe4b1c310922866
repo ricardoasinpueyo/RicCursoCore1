@@ -1,0 +1,10 @@
+
+public class TestEmpleado {
+	public static void main(String[] args) {
+		Empleado emp1 = new Empleado();
+		System.out.println(emp1.idEmpleado);
+		System.out.println(emp1.nombre);
+		System.out.println(emp1);
+	}
+
+}

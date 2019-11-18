@@ -1,0 +1,14 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import entidad.Coche;
+
+public class MainCoches {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		ArrayList<Coche> listaCoches = new ArrayList<Coche>();
+		int opcion = -1;
+	}
+}
