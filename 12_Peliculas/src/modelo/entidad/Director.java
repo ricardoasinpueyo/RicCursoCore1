@@ -1,5 +1,10 @@
 package modelo.entidad;
 
+/**
+ * 
+ * @author felix de pablo
+ *
+ */
 public class Director {
 	private String nombre;
 	private int edad;
