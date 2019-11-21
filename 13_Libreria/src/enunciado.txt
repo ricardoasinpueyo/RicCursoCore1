@@ -1,0 +1,18 @@
+Ejercicio de una libreria.
+Gestionar una libreria, la libreria tendrá un nombre de la libreria y una lista de libros
+De los libros queremos guardar la siguiente informacion
+	ISBN
+	titulo
+	editorial
+	año publicacion
+
+quiero un menu con diferentes opcion
+	- Dar de alta un libro
+	- listar libros
+	- buscar libro por ISBN
+	- buscar libros por editorial
+
+Requisitos
+	no pudeo haber un libro sin isbn
+	no puede haber un libro sin titulo
+	no puedo haber dos libros con el mismo isbn
