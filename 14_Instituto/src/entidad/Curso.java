@@ -8,6 +8,7 @@ public class Curso {
 	private double horas;
 	private double precio;
 	private ArrayList<Alumno> listaAlumnos;
+	
 	public Curso(int id, String nombre, double horas, double precio, ArrayList<Alumno> listaAlumnos) {
 		super();
 		this.id = id;
