@@ -32,9 +32,15 @@
 <fullyQualifiedTypeName name="modelo.entidad.Libreria"/>
 <fullyQualifiedTypeName name="entidad.Alumno"/>
 <fullyQualifiedTypeName name="entidad.Curso"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="entidad.Profesor"/>
 <fullyQualifiedTypeName name="entidad.Persona"/>
 <fullyQualifiedTypeName name="main.MainEstatico"/>
+<fullyQualifiedTypeName name="entidad.Tiburon"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="entidad.Animal"/>
+<fullyQualifiedTypeName name="entidad.Pez"/>
+<fullyQualifiedTypeName name="entidad.PezPayaso"/>
+<fullyQualifiedTypeName name="entidad.Trucha"/>
+<fullyQualifiedTypeName name="entidad.Oso"/>
 <fullyQualifiedTypeName name="entidad.Placton"/>
 </qualifiedTypeNameHistroy>
