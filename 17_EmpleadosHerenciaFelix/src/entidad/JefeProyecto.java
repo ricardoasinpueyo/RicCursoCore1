@@ -15,6 +15,12 @@ public class JefeProyecto extends Empleado{
 	public void setIncentivos(double incentivos) {
 		this.incentivos = incentivos;
 	}
+
+	@Override
+	public String toString() {
+		return "JefeProyecto [getNombre()=" + getNombre() + ", getDni()=" + getDni() + ", getSalarioBase()="
+				+ getSalarioBase() + ", getEdad()=" + getEdad() + ", incentivos=" + incentivos + "]";
+	}
 	
 	
 }

@@ -19,6 +19,12 @@ public class Director extends Empleado{
 	public void setListaEmpleados(ArrayList<Empleado> listaEmpleados) {
 		this.listaEmpleados = listaEmpleados;
 	}
+
+	@Override
+	public String toString() {
+		return "Director [getNombre()=" + getNombre() + ", getDni()=" + getDni() + ", getSalarioBase()="
+				+ getSalarioBase() + ", getEdad()=" + getEdad() + ", listaEmpleados=" + listaEmpleados + "]";
+	}
 	
 	
 	
