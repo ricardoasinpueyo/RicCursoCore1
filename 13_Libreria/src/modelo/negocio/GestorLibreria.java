@@ -35,7 +35,8 @@ public class GestorLibreria {
 	 * @param libro libro a dar de alta
 	 * @return 0 en caso de que haya ido bien, 1 en caso
 	 * de que falte el isbn, 2 en caso de que falte el titulo
-	 * y 3 en caso de que el isbn este duplicado
+	 * y 3 en caso de que el isbn este duplicado, 4 en caso 
+	 * de error con la bbdd
 	 */
 	public int alta(Libro libro) {
 		if(libro.getIsbn().isEmpty()) {
