@@ -1,0 +1,9 @@
+Ejercicio que queremos simular un procesamiento
+simultaneo de calculo de numeros primos.
+
+Quermos abrir 5 hilos que calculen si un numero
+es primo o no es primo. El numero habra que 
+pasarselo al hilo para que pueda saber si es primo
+
+Cada hilo cuando acabe, dira si su numero pasado es
+primo o no
