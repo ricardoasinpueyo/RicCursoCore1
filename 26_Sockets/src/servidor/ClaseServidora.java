@@ -11,13 +11,16 @@ import java.net.Socket;
 public class ClaseServidora {
 	public static void main(String[] args) {
 
-		ServerSocket ss;
+		ServerSocket ss = null;
 		try {
 			ss = new ServerSocket(2019);
+			System.out.println("Server escuchando por el puerto 2019");
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
+			return;
 		}
+		
 		//hacemos que el servidor nunca se pare y esta
 		//escuchando peticiones
 		while (true) {
@@ -37,6 +40,10 @@ public class ClaseServidora {
 				// usamos la clase InputStreamReader para leer del
 				// tunel de entrada de datos, lo que pasa es que esta
 				// clase solo me permite leer caracter a caracter
+				
+				//podemos pintar la ip que me llame
+				System.out.println(socket.getInetAddress().getHostAddress());
+				
 				InputStreamReader isr = new InputStreamReader(socket.getInputStream());
 
 				// para leer por frases, podemos usar la siguiente clase
@@ -59,6 +66,8 @@ public class ClaseServidora {
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+			} catch (NumberFormatException nfe) {
+				System.out.println("No es un numero lo que han mandado");
 			}
 		}
 	}

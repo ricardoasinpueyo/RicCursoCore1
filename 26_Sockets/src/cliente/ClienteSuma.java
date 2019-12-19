@@ -28,7 +28,8 @@ public class ClienteSuma {
 		//1.7 de java, podemos poner las variables que queremos
 		//cerrar automaticamente dentro de los parentesis del try
 		//y cuando salga se cerraran
-		try(Socket socket = new Socket("",2019);
+		//con el comando ipconfig podemos saber nuestras ips
+		try(Socket socket = new Socket("127.0.0.1",2019);
 				PrintStream ps = 
 						new PrintStream(socket.getOutputStream())) {
 			//creamos el tubo
