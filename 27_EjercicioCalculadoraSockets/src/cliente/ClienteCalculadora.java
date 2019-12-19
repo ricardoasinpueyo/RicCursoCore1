@@ -8,15 +8,12 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class ClienteSuma {
+public class ClienteCalculadora {
 
 	public static void main(String[] args) {
 		//System.in es un stream de entrada
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Introduzca la operacion:");
-		System.out.println("1-sumar,2-restar,3-multiplicar, 4-dividir");
-		int operacion = sc.nextInt();
 		System.out.println("Introduzca el numero 1: ");
 		int numero1 = sc.nextInt();
 		System.out.println("introduzca el numero 2: ");
@@ -39,7 +36,7 @@ public class ClienteSuma {
 			
 			//creamos un objeto que me permite escribir
 			//sobre el output stream del socket
-			ps.println(numero1 + "-" + numero2 + "-" + operacion);
+			ps.println(numero1 + "-" + numero2);
 			
 			//ahora en el cliente tendremos que ller la inforamcion
 			//del servidor
@@ -50,16 +47,7 @@ public class ClienteSuma {
 			BufferedReader bf = new BufferedReader(isr);
 			//en este linea nos quedaremos parados hasta que 
 			//el servidor nos responda
-			//System.out.println("cliente: " + bf.readLine());
-			String cadenaRespuesta = bf.readLine();
-			String[] respuestas = cadenaRespuesta.split("-");
-			
-			if(respuestas.length == 2) {
-				System.out.println("Error: " + respuestas[1]);
-			}else {
-				System.out.println("Resultado: " + respuestas[0]);
-			}
-			
+			System.out.println("cliente: " + bf.readLine());
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
