@@ -21,6 +21,24 @@ public class MainVideojuego {
 		g2.setArma(arco);
 		
 		g2.atacar();
+		
+		//Segunda parte con fabrica de personajes
+		System.out.println("******************************");
+		Personaje p1 = FabricaPersonajes.crear("guerrero");
+		p1.setNombre("Anacleto");
+		
+		Arma e1 = FabricaArmas.crear("espada");
+		//injeccion de dependencias carol!!!
+		p1.setArma(e1);
+		p1.atacar();
+		
+		Personaje p2 = FabricaPersonajes.crear("mago");
+		p2.setNombre("Harry potter");
+		
+		Arma h1 = FabricaArmas.crear("hechizoFuego");
+		//injeccion de dependencias carol!!!
+		p2.setArma(h1);
+		p2.atacar();
 
 	}
 
