@@ -1,0 +1,61 @@
+<!-- Esto seria un comentario -->
+<!-- todo fichero xml tiene un nodo que se llama nodo raiz o root
+	solo puede haber uno
+ -->
+<urbanizacion>
+	<casa>
+		<precio>100000</precio>
+		<propietario>
+			<nombre>jarry poter</nombre>
+			<edad>18</edad>
+			<peso>67</peso>
+			<direccion>
+				<tipoVia>Calle</tipoVia>
+				<nombreVia>Gran Via</nombreVia>
+				<cp>28224</cp>
+			</direccion>
+		</propietario>
+		<habitaciones>
+			<habitacion>
+				<tipo>salon</tipo>
+				<m2>45</m2>
+			</habitacion>
+			<habitacion>
+				<tipo>baño</tipo>
+				<m2>10</m2>
+			</habitacion>
+			<habitacion>
+				<tipo>cocina</tipo>
+				<m2>15</m2>
+			</habitacion>
+		</habitaciones>
+	</casa>
+	<casa>
+		<precio>200000</precio>
+		<propietario>
+			<nombre>ernion</nombre>
+			<edad>19</edad>
+			<peso>64</peso>
+			<direccion>
+				<tipoVia>Calle</tipoVia>
+				<nombreVia>Gran Via</nombreVia>
+				<cp>28224</cp>
+			</direccion>
+		</propietario>
+		<habitaciones>
+			<habitacion>
+				<tipo>salon</tipo>
+				<m2>50</m2>
+			</habitacion>
+			<habitacion>
+				<tipo>baño</tipo>
+				<m2>15</m2>
+			</habitacion>
+			<habitacion>
+				<tipo>cocina</tipo>
+				<m2>20</m2>
+			</habitacion>
+		</habitaciones>
+	</casa>
+</urbanizacion>
+
