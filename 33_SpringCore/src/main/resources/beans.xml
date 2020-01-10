@@ -72,4 +72,13 @@
 			</bean>
 		</property>
 	</bean>
+	
+	<!-- Ya que estamos usando una referencia de la interfaz
+		List, podemos usar el objeto que queramos siempre
+		y cuando implemente la interfaz List
+		
+		Podemos usar LinkedList, ArrayList, Vector, AbstractList
+	 -->
+	<bean id="listaPersonas" class="java.util.LinkedList"></bean>
+	<bean id="stringBean" class="java.lang.String"></bean>
 </beans> 

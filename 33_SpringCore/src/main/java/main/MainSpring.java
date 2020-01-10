@@ -1,5 +1,8 @@
 package main;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -75,7 +78,12 @@ public class MainSpring {
 		System.out.println(pEsneip);
 		//notese que no puedo acceder directametn a  la direccion de Esneip
 		
-		
+		//Debemos siempre en la medida de lo posible usar
+		//interfaces en vez referencias de clases concretas
+		//porque dejamos el codigo mas abierto a usar diferentes
+		//tipos de objetos
+		List<Persona> listaPersonas = context.getBean("listaPersonas",List.class);
+		listaPersonas.add(pRon);
 	}
 
 	private static void imprimirNombrePersonaSpring() {
