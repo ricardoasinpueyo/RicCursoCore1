@@ -7,6 +7,21 @@
 	    http://www.springframework.org/schema/context 
 	    http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- Aqui creamos un objeto persona de alcance Singleton,
+	un objeto gestionado por spring se suelen llamar bean,
+	para crear un bean en Spring debemos primero de crear
+	la clase, y es obligatorio que la clase tenga un constructor
+	por defecto
+	Por otro lado, al menos, debemos de crear un bean con
+	un identificador y de la clase la cual vamos a usar
+	para crear el objeto
+	 -->
 	<bean id="persona1" class="modelo.entidad.Persona">
+	</bean>
+	
+	<bean id="bud" class="modelo.entidad.Persona">
+		<property name="nombre" value="Bud Spencer"></property>
+		<property name="edad" value="86"></property>
+		<property name="peso" value="156"></property>
 	</bean>
 </beans> 
