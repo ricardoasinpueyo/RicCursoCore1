@@ -24,4 +24,52 @@
 		<property name="edad" value="86"></property>
 		<property name="peso" value="156"></property>
 	</bean>
+	
+	<!-- Tambien podemos hacer que los beans al crearlos
+		llamen a un constructor especifico, en este caso
+		llamamos al constructor completo
+		Si no ponemos el index, entonces los argumentos
+		de entrada serian en el orden que los pongamos
+	 -->
+	 
+	<bean id="terence" class="modelo.entidad.Persona">
+		<constructor-arg index="0" value="Terence Hill"></constructor-arg>
+		<constructor-arg index="1" value="55"></constructor-arg>
+		<constructor-arg index="2" value="78.5"></constructor-arg>
+	</bean>
+	
+	<bean id="direccion1" class="modelo.entidad.Direccion">
+		<property name="tipoVia" value="calle"></property>
+		<property name="nombreVia" value="Jogüarts"></property>
+		<property name="ciudad" value="pais de nunca jamas"></property>
+	</bean>
+	
+	<!-- Si queremos inyectar una dependencia por propiedad
+		podemos hacerlo con el atributo ref, y poniendo el 
+		id del objeto que queremos inyectar
+		Se haria de manera equivalente con constructor
+	 -->
+	<bean id="ron" class="modelo.entidad.Persona">
+		<property name="nombre" value="Ron Güeslei"></property>
+		<property name="edad" value="20"></property>
+		<property name="peso" value="67"></property>
+		<property name="direccion" ref="direccion1"></property>
+	</bean>
+	
+	<!-- Tambien podemos crear lo que se llama un bean interno
+		para inyerctarselo a la persona
+	 -->
+	 
+	 <bean id="esneip" class="modelo.entidad.Persona">
+		<property name="nombre" value="Esneip Draco"></property>
+		<property name="edad" value="59"></property>
+		<property name="peso" value="71"></property>
+		<property name="direccion">
+			<bean class="modelo.entidad.Direccion">
+				<property name="tipoVia" value="Avenida"></property>
+				<property name="nombreVia" value="Hazcaban"></property>
+				<property name="ciudad" value="pais de nunca jamas"></property>
+			</bean>
+		</property>
+	</bean>
 </beans> 

@@ -4,6 +4,7 @@ public class Persona {
 	private String nombre;
 	private int edad;
 	private double peso;
+	private Direccion direccion;
 			
 	public Persona() {
 		super();
@@ -15,6 +16,7 @@ public class Persona {
 		this.edad = edad;
 		this.peso = peso;
 	}
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -32,6 +34,19 @@ public class Persona {
 	}
 	public void setPeso(double peso) {
 		this.peso = peso;
+	}
+
+	public Direccion getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(Direccion direccion) {
+		this.direccion = direccion;
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", peso=" + peso + ", direccion=" + direccion + "]";
 	}
 	
 	

@@ -3,6 +3,7 @@ package main;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import modelo.entidad.Direccion;
 import modelo.entidad.Persona;
 
 public class MainSpring {
@@ -60,6 +61,21 @@ public class MainSpring {
 		
 		Persona p3 = context.getBean("bud",Persona.class);
 		System.out.println(p3.getPeso());
+		
+		Persona p4 = context.getBean("terence",Persona.class);
+		System.out.println(p4);
+		
+		Persona pRon = context.getBean("ron",Persona.class);
+		System.out.println(pRon);
+		
+		Direccion dRon = context.getBean("direccion1",Direccion.class);
+		System.out.println(dRon);
+		
+		Persona pEsneip = context.getBean("esneip",Persona.class);
+		System.out.println(pEsneip);
+		//notese que no puedo acceder directametn a  la direccion de Esneip
+		
+		
 	}
 
 	private static void imprimirNombrePersonaSpring() {
