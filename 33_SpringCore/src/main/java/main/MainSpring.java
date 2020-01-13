@@ -114,6 +114,22 @@ public class MainSpring {
 			//invocará a su propio toString
 			System.out.println(o);
 		}
+		
+		//ejemplos sobre prototype
+		System.out.println("********* Prototype **********");
+		Persona p5 = context.getBean("personaPrototype",Persona.class);
+		p5.setNombre("Felix");
+		
+		Persona p6 = context.getBean("personaPrototype",Persona.class);
+		p6.setNombre("Andres");
+		
+		List<Persona> personasSingleton = context.getBean("listaPersonasSingleton", List.class);
+		personasSingleton.add(p5);
+		personasSingleton.add(p6);
+		
+		for(Persona p : personasSingleton) {
+			System.out.println(p);
+		}
 	}
 
 	private static void imprimirNombrePersonaSpring() {

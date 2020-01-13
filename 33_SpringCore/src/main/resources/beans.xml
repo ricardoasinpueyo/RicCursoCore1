@@ -11,7 +11,7 @@
 	un objeto gestionado por spring se suelen llamar bean,
 	para crear un bean en Spring debemos primero de crear
 	la clase, y es obligatorio que la clase tenga un constructor
-	por defecto
+	por defecto.
 	Por otro lado, al menos, debemos de crear un bean con
 	un identificador y de la clase la cual vamos a usar
 	para crear el objeto
@@ -97,4 +97,56 @@
 			</list>
 		</constructor-arg>
 	</bean>
+	
+	<!-- 
+		Ciclos de vida de los objetos en Spring
+		
+		De momento todos estos objetos que hemos creado hasta
+		la fecha son de alcance(scope) o de ciclo de vida
+		de tipo SINGLETON. Esto quiere decir que la instancia
+		de dicho objeto es unica, solo existe ese objeto.
+		Por ejemplo, cuando me cree el objeto con id="bud" ese
+		objeto era unico y su ciclo de vida va a ser el ciclo
+		de vida del programa
+		
+		Existe otro ciclo de vida que el es llamado PROTOTYPE
+		Este ciclo de vida dice que cada vez que pidamos ese
+		objeto, no nos va a devolver ese objeto, nos va a
+		devolver un clon del mismo
+		
+		Para establecer el scope o ciclo de vida de un objeto
+		usamos el atribuo "scope", si no le decimos nada
+		el scope por defecto es SINGLETON
+		
+		Hay otro dos alcances que son SESSION y REQUEST
+		que ya veremos
+	 -->
+	 
+	 <bean id="personaSingleton" 
+	 	class="modelo.entidad.Persona"
+	 	scope="singleton">
+	 	<property name="nombre" value="Asterix"></property>
+	 	<property name="edad" value="39"></property>
+	 	<property name="peso" value="49"></property>
+	 </bean>
+	 
+	 <bean id="direccionPrototype" 
+	 		class="modelo.entidad.Direccion"
+	 		scope="prototype">
+	 </bean>
+	 
+	 <bean id="personaPrototype"
+	 		class="modelo.entidad.Persona"
+	 		scope="prototype">
+	 	<property name="nombre" value=""></property>
+	 	<property name="edad" value="18"></property>
+	 	<property name="direccion" ref="direccionPrototype"></property>		
+	 </bean>
+	 
+	 <bean id="listaPersonasSingleton"
+	 		class="java.util.ArrayList">		
+	 </bean>
+	 
+	 
+	 
 </beans> 

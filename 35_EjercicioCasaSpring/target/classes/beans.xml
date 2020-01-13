@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="h1" class="modelo.entidad.Habitacion">
+		<property name="tipo" value="Cocina"></property>
+		<property name="superficie" value="10"></property>
+	</bean>
+
+	<bean id="h2" class="modelo.entidad.Habitacion">
+		<property name="tipo" value="baño"></property>
+		<property name="superficie" value="8"></property>
+	</bean>
+
+	<bean id="h3" class="modelo.entidad.Habitacion">
+		<property name="tipo" value="salon"></property>
+		<property name="superficie" value="9.3"></property>
+	</bean>
+
+	<bean id="h4" class="modelo.entidad.Habitacion">
+		<property name="tipo" value="dormitorio"></property>
+		<property name="superficie" value="15"></property>
+	</bean>
+
+	<bean id="h5" class="modelo.entidad.Habitacion">
+		<property name="tipo" value="terraza"></property>
+		<property name="superficie" value="20"></property>
+	</bean>
+
+	<bean id="dCasa" class="modelo.entidad.Direccion">
+		<constructor-arg index="0" value="calle">
+		</constructor-arg>
+		<constructor-arg index="1" value="Lucero">
+		</constructor-arg>
+		<constructor-arg index="2" value="Madrid">
+		</constructor-arg>
+
+	</bean>
+
+	<bean id="dPropietario" class="modelo.entidad.Direccion">
+		<constructor-arg value="paseo">
+		</constructor-arg>
+		<constructor-arg value="placido">
+		</constructor-arg>
+		<constructor-arg value="Barcelona">
+		</constructor-arg>
+	</bean>
+
+	<bean id="p1" class="modelo.entidad.Persona">
+		<constructor-arg value="Loreto"></constructor-arg>
+		<constructor-arg value="43"></constructor-arg>
+		<constructor-arg value="70"></constructor-arg>
+		<constructor-arg ref="dPropietario"></constructor-arg>
+
+	</bean>
+
+	<bean id="habitaciones" class="java.util.ArrayList">
+		<constructor-arg>
+			<list value-type="modelo.entidad.Habitacion">
+				<ref bean="h1" />
+				<ref bean="h2" />
+				<ref bean="h3" />
+				<ref bean="h4" />
+				<ref bean="h5" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+
+
+
+	<bean id="c1" class="modelo.entidad.Casa">
+		<property name="precio" value="2500000"></property>
+		<property name="direccion" ref="dCasa"></property>
+		<property name="propietario" ref="p1"></property>
+		<property name="listaHabitaciones" ref="habitaciones"></property>
+
+	</bean>
+
+
+
+</beans>
