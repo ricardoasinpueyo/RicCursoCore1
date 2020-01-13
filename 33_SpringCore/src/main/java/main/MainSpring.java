@@ -84,6 +84,36 @@ public class MainSpring {
 		//tipos de objetos
 		List<Persona> listaPersonas = context.getBean("listaPersonas",List.class);
 		listaPersonas.add(pRon);
+		
+		//ahora obtemos la lista con los objetos inyectados
+		//mediante spring
+		System.out.println("******* lista personas ********");
+		List<Persona> personas = context.getBean("personas", List.class);
+		for(Persona p : personas) {
+			System.out.println(p);
+		}
+		personas.add(pEsneip);
+		personas.add(pRon);
+		
+		for(Persona p : personas) {
+			System.out.println(p);
+		}
+		
+		System.out.println("********* todos los ids **************");
+		//esto me devuelve toods los ids que tenga en 
+		//el contexto de spring
+		String[] idsContexto = context.getBeanDefinitionNames();
+		for(String id : idsContexto) {
+			System.out.println(id);
+		}
+		
+		System.out.println("******* imprimimos todos los objetos **************");
+		for(String id : idsContexto) {
+			Object o = context.getBean(id);
+			//gracias al polimorfismo cada objeto
+			//invocará a su propio toString
+			System.out.println(o);
+		}
 	}
 
 	private static void imprimirNombrePersonaSpring() {

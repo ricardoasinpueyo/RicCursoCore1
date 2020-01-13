@@ -81,4 +81,20 @@
 	 -->
 	<bean id="listaPersonas" class="java.util.LinkedList"></bean>
 	<bean id="stringBean" class="java.lang.String"></bean>
+	
+	<!-- Podemos meter a una lista objetos que esten en
+	nuestro contexto -->
+	<bean id="personas" class="java.util.ArrayList">
+		<constructor-arg>
+			<list value-type="modelo.entidad.Persona">
+				<ref bean="bud"/>
+				<ref bean="terence"></ref>
+				<bean class="modelo.entidad.Persona">
+					<property name="nombre" value="Dambeldor"></property>
+					<property name="edad" value="345"></property>
+					<property name="peso" value="90"></property>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
 </beans> 
