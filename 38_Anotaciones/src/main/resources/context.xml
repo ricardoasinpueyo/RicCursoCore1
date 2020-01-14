@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<!-- debemos de decir a spring que vaya a las clases a buscar
+las anotaciones, con esta etiqueta, debemos de tener el 
+namespace "context" metido (pestaña namespace) -->
+	<context:component-scan base-package="modelo">
+	</context:component-scan>
+	
+	<!-- podriamos seguir dando de alta a partir de aqui beans 
+	como en ejemplos anteriores
+	-->
+	<bean id="listaPersonas" class="java.util.ArrayList"/>
+	
+	<bean id="director2" class="modelo.entidad.Director"/>
+</beans>

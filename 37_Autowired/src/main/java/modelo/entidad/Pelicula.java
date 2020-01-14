@@ -3,7 +3,7 @@ package modelo.entidad;
 public class Pelicula {
 	private String titulo;
 	private String genero;
-	private Director Director;
+	private Director director;
 	private int anioEstreno;
 	
 	public String getTitulo() {
@@ -19,10 +19,10 @@ public class Pelicula {
 		this.genero = genero;
 	}
 	public Director getDirector() {
-		return Director;
+		return director;
 	}
 	public void setDirector(Director director) {
-		Director = director;
+		director = director;
 	}
 	public int getAnioEstreno() {
 		return anioEstreno;
@@ -33,7 +33,7 @@ public class Pelicula {
 	
 	@Override
 	public String toString() {
-		return "Pelicula [titulo=" + titulo + ", genero=" + genero + ", Director=" + Director + ", anioEstreno="
+		return "Pelicula [titulo=" + titulo + ", genero=" + genero + ", Director=" + director + ", anioEstreno="
 				+ anioEstreno + "]";
 	}
 }
