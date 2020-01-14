@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="director" class="modelo.entidad.Director">
+		<property name="nombre" value="Jarri Poter"></property>
+	</bean>
+	
+	<bean id="director2" class="modelo.entidad.Director">
+		<property name="nombre" value="Ernion Gúesley"></property>
+	</bean>
+	
+	<!-- El autowired es una caracteristica de spring, la cual
+		podemos enlazar todas las dependecias de objetos que tenga
+		otro objeto de manera automatica. Por defecto, Spring
+		buscará los objetos cuyo tipo coincida con el tipo
+		de la referencia. En este caso, la pelicula necesita
+		de un objeto director, por lo cual buscará en el contexto
+		de spring un objeto de tipo pelicula. Este objeto director
+		debería de ser unico ya que si tenemos más spring no sabria
+		cual inyectar. El autowired por defecto es el autowired
+		por tipo(byType, es decir la busqueda se hara por tipo de 
+		objeto
+		
+		tenemos otro tipo que es el autowired por nombre(byName)
+		en este caso buscara un objeto cuya id sea igual que l
+		nombre de la propiedad. Es decir, en este ejemplo
+		la nombre de la propiedad de la pelicula es "director"
+		por lo tanto buscará un objeto en el contexto de spring
+		cuyo id sea "director"
+	 -->
+	
+	<bean id="pelicula" class="modelo.entidad.Pelicula"
+		autowire="byName">
+		<property name="titulo" value="La piedra Filosofal"></property>
+	</bean>
+</beans>
