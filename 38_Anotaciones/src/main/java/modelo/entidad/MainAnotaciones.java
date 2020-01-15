@@ -13,6 +13,10 @@ public class MainAnotaciones {
 		Pelicula p = context.getBean("pelicula",Pelicula.class);
 		System.out.println(p);
 
+		String[] ids = context.getBeanDefinitionNames();
+		for(String s : ids) {
+			System.out.println(s);
+		}
 	}
 
 }

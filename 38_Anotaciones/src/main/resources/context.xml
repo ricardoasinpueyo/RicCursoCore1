@@ -16,5 +16,7 @@ namespace "context" metido (pestaña namespace) -->
 	-->
 	<bean id="listaPersonas" class="java.util.ArrayList"/>
 	
-	<bean id="director2" class="modelo.entidad.Director"/>
+	<bean id="director2" class="modelo.entidad.Director">
+		<property name="nombre" value="Fray Perico (y su borrico)"></property>
+	</bean>
 </beans>

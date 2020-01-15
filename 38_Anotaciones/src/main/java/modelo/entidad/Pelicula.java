@@ -12,7 +12,7 @@ public class Pelicula {
 	private String genero;
 	@Autowired
 	//por defecto es autowired por name
-	//@Qualifier("director2")
+	@Qualifier("director2")
 	//va en conjuto con @Autowired, y luego le decimos
 	//el id del objeto que queremos que le inyecte
 	private Director director;
