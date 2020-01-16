@@ -15,9 +15,6 @@ public class MainLibreria {
 	public static ApplicationContext context;
 	
 	public static void main(String[] args) {
-		//Primera parte
-		//creacion de los objetos necesarios para el programa
-		//y la inyeccion de sus dependencias
 		Scanner sc = new Scanner(System.in);
 		context = new ClassPathXmlApplicationContext("context.xml");
 		

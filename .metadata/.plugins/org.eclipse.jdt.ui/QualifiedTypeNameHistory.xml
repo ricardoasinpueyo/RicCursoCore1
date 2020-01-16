@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="negocio.GestorCalculadora"/>
-<fullyQualifiedTypeName name="java.util.InputMismatchException"/>
-<fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
-<fullyQualifiedTypeName name="java.util.Vector"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
-<fullyQualifiedTypeName name="interfaces.Movible"/>
-<fullyQualifiedTypeName name="interfaces.Persona"/>
 <fullyQualifiedTypeName name="paquete.ClaseJava"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
@@ -52,12 +45,19 @@
 <fullyQualifiedTypeName name="Personaje"/>
 <fullyQualifiedTypeName name="Coliseo"/>
 <fullyQualifiedTypeName name="modelo.entidad.Direccion"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="modelo.entidad.Coche"/>
 <fullyQualifiedTypeName name="modelo.entidad.Persona"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="modelo.entidad.Casa"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-<fullyQualifiedTypeName name="modelo.entidad.Casa"/>
+<fullyQualifiedTypeName name="modelo.negocio.GestorLibreria"/>
+<fullyQualifiedTypeName name="vista.MainLibreria"/>
 </qualifiedTypeNameHistroy>
