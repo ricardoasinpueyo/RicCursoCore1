@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
-<fullyQualifiedTypeName name="vista.VistaPeliculas"/>
-<fullyQualifiedTypeName name="modelo.negocio.GestorPelicula"/>
-<fullyQualifiedTypeName name="modelo.persistencia.DaoPelicula"/>
-<fullyQualifiedTypeName name="modelo.persistencia.DaoLibreria"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="basico.HiloThread"/>
 <fullyQualifiedTypeName name="basico.HiloRunnable"/>
@@ -52,12 +47,17 @@
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="modelo.negocio.GestorLibreria"/>
 <fullyQualifiedTypeName name="vista.MainLibreria"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
 <fullyQualifiedTypeName name="cfg.ConfiguracionSpring"/>
 <fullyQualifiedTypeName name="modelo.entidad.Pelicula"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
 <fullyQualifiedTypeName name="modelo.entidad.Director"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="modelo.entidad.Cliente"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+<fullyQualifiedTypeName name="modelo.persistencia.DaoClientes"/>
+<fullyQualifiedTypeName name="modelo.negocio.GestorClientes"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="config.ConfiguracionSpring"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
 </qualifiedTypeNameHistroy>

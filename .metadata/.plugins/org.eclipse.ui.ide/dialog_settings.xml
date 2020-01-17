@@ -12,6 +12,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\aula2m\Desktop\workspaceJSE\32_JPADao"/>
 			<item value="C:\Users\aula2m\Desktop\workspaceJSE\Ejercicio_CRUD_BBDD_Maven_Spring"/>
 			<item value="C:\Users\aula2m\Desktop\09_Casa_Natalia"/>
 			<item value="C:\manana_PROG_SIST\trabajo_clase\99_Herencia_Empleados"/>
