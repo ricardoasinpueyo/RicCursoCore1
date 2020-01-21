@@ -1,6 +1,7 @@
 package modelo.negocio;
 
 
+import java.beans.Transient;
 import java.util.List;
 
 import modelo.entidad.Libro;
@@ -41,6 +42,7 @@ public class GestorLibreria {
 	 * de que falte el isbn, 2 en caso de que falte el titulo
 	 * y 3 en caso de que el isbn este duplicado
 	 */
+	
 	public int alta(Libro libro) {
 		if(libro.getIsbn().isEmpty()) {
 			return 1;
